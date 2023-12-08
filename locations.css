@@ -1,0 +1,48 @@
+.locations-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+    grid-gap: 20px;
+}
+
+.location img {
+    object-fit: cover;
+    height: 125px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.location {
+    background-color: var(--light-pink);
+    border-radius: 10px;
+}
+
+.location ul {
+    list-style-type: none;
+    text-align: left;
+    font-size: small;
+}
+
+.location .days {
+    font-weight: bold;
+    color: var(--foreground);
+}
+
+.location .details {
+    padding: 15px 30px 25px 30px;
+}
+
+.location .coming-soon {
+    color: var(--foreground);
+    font-weight: bold;
+}
+
+.location .new {
+    background-color: var(--accent);
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    padding: 5px 8px;
+    border-radius: 3px;
+    max-width: 35px;
+}

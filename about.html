@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="about.css">
+        <title>Scoop</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img id="logo" src=".\images\scoop-logo.png">
+                <p id="logo-text">SCOOP</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>What's the scoop on... Scoop?</h1>
+            <div class="introductory-content">
+                <p class="quote">
+                    "...a celebration of all things local and delicious."
+                </p>
+                <img src=".\images\lila.jpg">
+            </div>
+            
+            <p>Nestled in the heart of Melbourne, our charming little ice cream shop is not just a treat for your taste buds, but a celebration of all things local and delicious.</p>
+            <p>Meet Lila, the owner of Scoop. She started her career as a globetrotting flavour explorer. From the bustling markets of Marrakech to the serene orchards of Kyoto, she sought inspiration in the corners of the world where sweet moments were celebrated. It was during these adventures that the seed of Scoop was planted, nurtured by the desire to bring a taste of happiness to her own community.</p>
+            <p>Returning to her roots, Lila dove headfirst into the art of ice cream making. Armed with an old-fashioned churn and a trove of local ingredients, she set out to create frozen masterpieces that would tell the story of her adventures and her town. From the dairy farms that dotted the landscape to the orchards where fruits ripened in the warm sun, every scoop was a love letter to the community she cherished.</p>
+            <p>Every day, our ice cream artisans are hard at work concocting the same magic in the kitchen. Every sprinkle, swirl, and dollop is crafted from the finest locally-sourced ingredients. Peruse our menu, a kaleidoscope of flavours inspired by the seasons and the bounty of our community, and watch as we transform simple milk and cream into frozen works of art!</p>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="left-content">
+                    <div class="logo">
+                        <img src=".\images\simple-logo.png">
+                        <p>SCOOP</p>
+                    </div>
+                    <!-- <div class="addresses">
+                        <p>150 Lonsdale Street, Melbourne</p>
+                        <p>22 Flinders Lane, Melbourne</p>
+                    </div> -->
+                    <div class="links">
+                        <a href="index.html">Careers</a>
+                        <a href="index.html">FAQ</a>
+                        <a href="index.html">Privacy Policy</a>
+                        <a href="index.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <p>Keep up-to-date with our new & seasonal flavours!</p>
+                    <div class="mailing-list-subscription-wrapper" id="mailing-list-subscription-wrapper">
+                        <form>
+                            <input type="text" name="email" id="email" placeholder="Enter your email address!">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="social-media-information">
+                        <p>Follow us!</p>
+                        <img src=".\images\instagram.png">
+                        <img src=".\images\tiktok.png">
+                        <img src=".\images\facebook.png">
+                    </div>
+                </div>
+            </div>
+            <div id="copyright-information">
+            </div>
+        </footer>
+
+        <script>
+            function setCopyrightInformation() {
+                const currentDate = new Date();
+                const currentYear = currentDate.getFullYear();
+
+                let copyrightText = `<p>© 2022-${currentYear}, Scoop. All rights reserved. Made by Marielle Louisse Lopez, ${currentYear}.</p>`;
+
+                let copyrightContent = document.getElementById('copyright-information');
+                copyrightContent.innerHTML = copyrightText;
+            }
+
+            setCopyrightInformation();
+        </script>
+    </body>
+</html>

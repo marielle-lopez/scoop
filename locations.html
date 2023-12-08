@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="locations.css">
+        <title>Scoop</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img id="logo" src=".\images\scoop-logo.png">
+                <p id="logo-text">SCOOP</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Locations</h1>
+
+            <!-- <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OowLjprUPppP9lsxkjYfZqwetKh7Yfw&ehbc=2E312F&noprof=1" width="640" height="480"></iframe> -->
+
+            <div class="locations-wrapper">
+                <div class="location">
+                    <img src=".\images\flinders-lane.jpg">
+                    <div class="details">
+                        <!-- <p class="new">New!</p> -->
+                        <p>22 Flinders Lane, Melbourne</p>
+                        <ul>
+                            <li><span class="days">MON to WED:</span> 10:00 - 17:00</li>
+                            <li><span class="days">THU:</span> 10:00 - 22:30</li>
+                            <li><span class="days">FRI to SUN:</span> 10:00 - 0:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src=".\images\lonsdale-street.jpg">
+                    <div class="details">
+                        <p>150 Lonsdale Street, Melbourne</p>
+                        <ul>
+                            <li><span class="days">MON to WED:</span> 10:00 - 17:00</li>
+                            <li><span class="days">THU:</span> 10:00 - 22:00</li>
+                            <li><span class="days">FRI to SUN:</span> 10:00 - 0:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src=".\images\lygon-street.jpg">
+                    <div class="details">
+                        <p>400 Lygon Street, Carlton</p>
+                        <ul>
+                            <li><span class="days">MON to WED:</span> 12:00 - 17:00</li>
+                            <li><span class="days">THU:</span> 12:00 - 22:30</li>
+                            <li><span class="days">FRI to SUN:</span> 11:00 - 0:00</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src=".\images\caroline-springs.jpg">
+                    <div class="details">
+                        <p>12 Lake Street, Caroline Springs</p>
+                        <ul>
+                            <li><span class="days">MON to WED:</span> 12:00 - 17:00</li>
+                            <li><span class="days">THU:</span> 12:00 - 22:00</li>
+                            <li><span class="days">FRI to SUN:</span> 11:00 - Late</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src=".\images\richmond.jpg">
+                    <div class="details">
+                        <p>128 Swan Street, Richmond</p>
+                        <ul>
+                            <li><span class="days">MON to WED:</span> 12:00 - 17:00</li>
+                            <li><span class="days">THU:</span> 12:00 - 22:30</li>
+                            <li><span class="days">FRI to SUN:</span> 11:00 - 22:30</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location">
+                    <img src=".\images\placeholder.png">
+                    <div class="details">
+                        <p>Highpoint Shopping Centre, Ground Level, Rosamond Road, Maribyrnong</p>
+                        <p class="coming-soon">Coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="left-content">
+                    <div class="logo">
+                        <img src=".\images\simple-logo.png">
+                        <p>SCOOP</p>
+                    </div>
+                    <!-- <div class="addresses">
+                        <p>150 Lonsdale Street, Melbourne</p>
+                        <p>22 Flinders Lane, Melbourne</p>
+                    </div> -->
+                    <div class="links">
+                        <a href="index.html">Careers</a>
+                        <a href="index.html">FAQ</a>
+                        <a href="index.html">Privacy Policy</a>
+                        <a href="index.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <p>Keep up-to-date with our new & seasonal flavours!</p>
+                    <div class="mailing-list-subscription-wrapper" id="mailing-list-subscription-wrapper">
+                        <form>
+                            <input type="text" name="email" id="email" placeholder="Enter your email address!">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="social-media-information">
+                        <p>Follow us!</p>
+                        <a href="https://instagram.com">
+                            <img src=".\images\instagram.png">
+                        </a>
+                        <a href="https:\\tiktok.com">
+                            <img src=".\images\tiktok.png">
+                        </a>
+                        <a href="https:\\facebook.com">
+                            <img src=".\images\facebook.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright-information">
+            </div>
+        </footer>
+
+        <script>
+            function setCopyrightInformation() {
+                const currentDate = new Date();
+                const currentYear = currentDate.getFullYear();
+
+                let copyrightText = `<p>© 2022-${currentYear}, Scoop. All rights reserved. Made by Marielle Louisse Lopez, ${currentYear}.</p>`;
+
+                let copyrightContent = document.getElementById('copyright-information');
+                copyrightContent.innerHTML = copyrightText;
+            }
+
+            setCopyrightInformation();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="index.css">
+        <title>Scoop</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img id="logo" src=".\images\scoop-logo.png">
+                <p id="logo-text">SCOOP</p>
+            </a>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Woo, we've got new flavours</h1>
+            <p class="subtitle">Visit one of our stores to try them out!</p>
+            <div class="images-wrapper">
+                <img src=".\images\pistachio.png">
+                <img src=".\images\bueno.png">
+                <img src=".\images\brownie.png">
+                <img src=".\images\bubblegum.png">
+                <img src=".\images\dulce-de-leche.png">
+                <p>Pistachio</p>
+                <p>Bueno</p>
+                <p>Brownie</p>
+                <p>Bubblegum</p>
+                <p>Dulce de Leche</p>
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrapper">
+                <div class="left-content">
+                    <div class="logo">
+                        <img src=".\images\simple-logo.png">
+                        <p>SCOOP</p>
+                    </div>
+                    <!-- <div class="addresses">
+                        <p>150 Lonsdale Street, Melbourne</p>
+                        <p>22 Flinders Lane, Melbourne</p>
+                    </div> -->
+                    <div class="links">
+                        <a href="index.html">Careers</a>
+                        <a href="index.html">FAQ</a>
+                        <a href="index.html">Privacy Policy</a>
+                        <a href="index.html">Terms of Service</a>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <p>Keep up-to-date with our new & seasonal flavours!</p>
+                    <div class="mailing-list-subscription-wrapper" id="mailing-list-subscription-wrapper">
+                        <form>
+                            <input type="text" name="email" id="email" placeholder="Enter your email address!">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="social-media-information">
+                        <p>Follow us!</p>
+                        <img src=".\images\instagram.png">
+                        <img src=".\images\tiktok.png">
+                        <img src=".\images\facebook.png">
+                    </div>
+                </div>
+            </div>
+            <div id="copyright-information">
+            </div>
+        </footer>
+
+        <script>
+            function setCopyrightInformation() {
+                const currentDate = new Date();
+                const currentYear = currentDate.getFullYear();
+
+                let copyrightText = `<p>© 2022-${currentYear}, Scoop. All rights reserved. Made by Marielle Louisse Lopez, ${currentYear}.</p>`;
+
+                let copyrightContent = document.getElementById('copyright-information');
+                copyrightContent.innerHTML = copyrightText;
+            }
+
+            setCopyrightInformation();
+        </script>
+    </body>
+</html>
